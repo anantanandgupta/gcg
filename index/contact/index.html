@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact - Gupta Chashma Ghar - Gupta Optical sirsa - Optical Store sirsa - Eye testing sirsa - Eye checkup sirsa - contact lenses sirsa</title>    <link href="/style/main.css" rel="stylesheet" />
+    <link rel="icon" href="/ico/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/ico/favicon.ico" type="image/x-icon">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="/scripts/jquery.validate.min.js"></script>
+<script type="text/javascript" src="/scripts/jquery.validate.additional-methods.min.js"></script>
+<script type="text/javascript">
+    //<!--
+        jQuery.validator.addMethod('positiveNumber', function (value, element) { 
+        return this.optional(element) || value.match(/^\+?\d{10,15}$/);
+    }, "Enter a positive number.");
+    $(function() {
+        $('#formContact').validate({
+            focusCleanup: false,
+            onkeyup: false,
+            focusInvalid: false,
+            onfocusout: true,
+            rules: {
+                txtName: {
+                    required: true
+                },
+                txtEmail: {
+                    required: true,
+                    email: true
+                },
+                txtPhone: {
+                    required: true,
+                    positiveNumber: true
+                },
+                txtMessage: {
+                    required: true
+                }
+            },
+            errorPlacement: function(errorElement, validatedElement) {
+                // remove the error message; we need to just highlight the fields
+                $(errorElement).css('display', 'none');
+            },
+            highlight: function(validatedElement) {
+                $(validatedElement).addClass("errorField"); // highlight the field
+            },
+            unhighlight: function(validatedElement) {
+                $(validatedElement).removeClass("errorField"); // unhighlight the field
+            },
+            invalidHandler: function (event, validator) {
+                /* alert the user in case there is some input errors */
+                alert('Please correct the values in the fields highlighted red.');
+            }
+        });
+    });
+    //-->
+</script></head>
+<body>
+    <div class="PageContainer">
+        <header>
+            <div class="leftContents">
+                <img src="/images/site-logo.png" alt="GUPTA CHASHMA GHAR LOGO" />
+            </div>
+            <div class="rightContents">
+                <div style="text-align: right;"><a target="_blank" href="https://www.google.com/maps/place/Gupta+Chashmaghar/@29.533726,75.025499,17z"><img style="vertical-align: sub; width: 16px; border: none; padding: 0 5px;" src="/images/map-pointer-icon.png"></a>
+                    Suratgaria Chowk, Sirsa, Haryana - 125055 (India)<br />
+                <img style="vertical-align: sub; width: 16px; border: none; padding: 0 5px;" src="/images/phone-icon.png">+91 1666 222411, +91 9355 322411<br />
+                <img style="vertical-align: sub; width: 16px; border: none; padding: 0 5px;" src="/images/whatsapp-logo.png">+91 9896 322411<br />
+                <img style="vertical-align: sub; width: 16px; border: none; padding: 0 5px;" src="/images/facebook-logo.png">Facebook Page: <a href="http://www.facebook.com/GuptaChashmaGhar">GuptaChashmaGhar</a></div>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/index/offers/">Offers</a></li>
+                <li><a href="/index/eyecare/">Eye Care</a></li>
+                <li><a href="/index/eyeglasses/">Eye Glasses</a></li>
+                <li><a href="/index/sunglasses/">Sun Glasses</a></li>
+                <li><a href="/index/contactlenses/">Contact Lenses</a></li>
+                <li><a href="/index/about/">About Us</a></li>
+                <li><a href="/index/contact/">Contact Us</a></li>
+                <!--<li><a href="/index/feedback/">Feedback</a></li>-->
+            </ul>
+        </nav>
+            
+<section>
+    <div class="sliderContainer">
+        <div class="slider"><img src="/images/banner/banner-contact.jpg"></div>
+    </div>
+</section>
+<section>
+    <div class="divFormContainer">
+        <form method="post" id="formContact">
+            <div style="width: 410px; float: left;">
+                <fieldset class="formFieldset">
+                    <label>Name :</label>
+                    <input type="text" id="txtName" name="txtName" class="formField" />
+                    <span>Please enter your name (required)</span>
+                </fieldset>
+                <fieldset class="formFieldset">
+                    <label>Email :</label>
+                    <input type="text" id="txtEmail" name="txtEmail" class="formField" />
+                    <span>Please enter your email (required)</span>
+                </fieldset>
+                <fieldset class="formFieldset">
+                    <label>Phone / Mobile :</label>
+                    <input type="text" id="txtPhone" name="txtPhone" class="formField" />
+                    <span>Please enter your phone (required)</span>
+                </fieldset>
+            </div>
+            <div style="width: 610px; float: left;">
+                <fieldset class="formFieldset">
+                    <label>Message :</label>
+                    <textarea rows="8" id="txtMessage" name="txtMessage" class="formField" ></textarea>
+                    <span>Please enter your message (required)</span>
+                </fieldset>
+                <fieldset class="formFieldset">
+                    <input type="submit" value="Send" id="btnSubmit" name="btnSubmit" />
+                </fieldset>
+            </div>
+        </form>
+    </div>
+</section>        <footer>
+            <div>
+                <!--[ <a href="/index/eyecare/">Eye Care</a> ]
+                [ <a href="/index/eyeglasses/">Eye Glasses</a> ]
+                [ <a href="/index/sunglasses/">Sun Glasses</a> ]
+                [ <a href="/index/contactlenses/">Contact Lenses</a> ]
+                <br />-->
+                <span>Designed & Developed by: <a href="http://www.mindzgroup.com">MindzGroup Technologies, Bangalore</a></span>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

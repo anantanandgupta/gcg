@@ -1,0 +1,310 @@
+/* fonts */
+/* Source Sans Pro */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Source Sans Pro ExtraLight'), local('SourceSansPro-ExtraLight'), url(Source_Sans_Pro_ExtraLight.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(Source_Sans_Pro_Light.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(Source_Sans_Pro.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url(Source_Sans_Pro_Semibold.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(Source_Sans_Pro_Bold.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Source Sans Pro Black'), local('SourceSansPro-Black'), url(Source_Sans_Pro_Black.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 200;
+  src: local('Source Sans Pro ExtraLight Italic'), local('SourceSansPro-ExtraLightIt'), url(Source_Sans_Pro_ExtraLight_Italic.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Source Sans Pro Light Italic'), local('SourceSansPro-LightIt'), url(Source_Sans_Pro_Light_Italic.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Source Sans Pro Italic'), local('SourceSansPro-It'), url(Source_Sans_Pro_Italic.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Source Sans Pro Semibold Italic'), local('SourceSansPro-SemiboldIt'), url(Source_Sans_Pro_Semibold_Italic.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Source Sans Pro Bold Italic'), local('SourceSansPro-BoldIt'), url(Source_Sans_Pro_Bold_Italic.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 900;
+  src: local('Source Sans Pro Black Italic'), local('SourceSansPro-BlackIt'), url(Source_Sans_Pro_Black_Italic.woff) format('woff');
+}
+
+/* page style */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    font-family: 'Source Sans Pro', monospace;
+    font-size: 14px;
+    overflow:auto;
+}
+
+.PageContainer {
+    width: 1020px;
+    clear: both;
+    margin: 0 auto;
+    background-color: #fff;
+    overflow:auto;
+}
+header, nav, section, footer {
+    width: 100%;
+    margin-top: 10px;
+    overflow: auto;
+}
+header .leftContents {
+    padding: 0;
+    float: left;
+    padding-top: 5px;
+}
+header .rightContents {
+    padding: 5px 15px 0;
+    float: right;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-size: 15px;
+}
+header .rightContents a {
+    text-decoration: none;
+    color: #357;
+}
+header .leftContents img {
+    border: none;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+}
+nav {
+    width: 100%;
+    height: 35px;
+    background: #357;
+    border-radius: 5px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    overflow: auto;
+    float: left;
+}
+nav ul li:first-child {
+    border-left: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+nav ul li:last-child {
+    border-right: none;
+}
+nav ul li {
+    line-height: 35px;
+    float: left;
+    margin: 0;
+    padding: 0 10px;
+    border-left: 1px solid #135;
+    border-right: 1px solid #579;
+}
+nav ul li:hover {
+    background-color: #579;
+}
+nav ul li a, nav ul li a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+nav ul li a:hover, nav ul li a:active {
+    color: #fff;
+    text-decoration: none;
+}
+section .sliderContainer {
+    width: 100%;
+    height: 270px;
+    border: 1px solid #357;
+    border-radius: 5px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 9px;
+}
+section .slider {
+    width: 100%;
+    height: 100%;
+    background-color: #79b
+}
+footer div {
+    border-top: 1px solid #357;
+    text-align: center;
+    padding: 5px 0 15px;
+}
+footer div a {
+    color: #357;
+    text-decoration: none;
+}
+footer div a:hover {
+    color: #000;
+    text-decoration: none;
+}
+footer div span {
+    font-size: 12px;
+}
+ul.imageTiles {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+}
+ul.imageTiles li {
+    float: left;
+    margin: 9px 0 0 9px;
+    padding: 10px;
+    border: 1px solid #579;
+    border-radius: 5px;
+}
+.fesTable {
+    width: 100%;
+    float: none;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+}
+.fesTable th {
+    text-align: left;
+    background-color: #357;
+    color: #fff;
+    padding: 2px 5px;
+    font-weight: 400;
+    border-bottom: 1px solid #fff;
+}
+.fesTable td {
+    text-align: left;
+    background-color: #9fbfdf;
+    color: #135;
+    padding: 2px 5px;
+    font-weight: 400;
+    border-bottom: 1px solid #fff;
+}
+#divImageScroller
+{
+    width: 790px;
+    height: 80px;
+    overflow: hidden;
+    font-size: 0;
+}
+#divImageScroller ul {
+    /*width: 10000px;
+    height: 600px;*/
+    margin: 0;
+    padding: 0;
+}
+#divImageScroller ul li {
+    display: inline-block;
+    margin: 10px 0 10px 10px;
+    padding: 9px;
+    border: 1px solid #579;
+    border-radius: 5px;
+}
+.divOffers {
+    width: 100%;
+    padding: 0 10px;
+    overflow: auto;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.divOffers img {
+    padding-bottom: 10px;
+    float: left
+}
+.divOffers img:last-child {
+    padding-bottom: 0;
+}
+.galaryContainer {
+    padding-left: 15px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    overflow: auto;
+}
+.galaryContainer img {
+    margin: 0 10px 10px 0;
+    float: left;
+}
+.divFormContainer .formFieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.divFormContainer .formFieldset label {
+    display: block;
+    margin-left: 5px;
+    font-weight: 600;
+    font-size: 16px;
+}
+.divFormContainer .formFieldset .formField {
+    display: block;
+    margin: 0;
+    padding: 3px 5px;
+    line-height: 24px;
+    font-size: 16px;
+    max-width: 300px;
+    width: 100%;
+    margin: 0;
+    margin-top: 2px;
+    border: 1px solid #333;
+}
+.divFormContainer .formFieldset textarea.formField {
+    max-width: 580px;
+}
+.divFormContainer .formFieldset span {
+    font-size: 13px;
+    font-style: italic;
+    color: #666;
+    line-height: 10px;
+    margin-left: 5px;
+}
+.divFormContainer .formFieldset .errorField {
+    border: 1px solid #f00;
+}
